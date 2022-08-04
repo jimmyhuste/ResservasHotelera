@@ -1,0 +1,190 @@
+{% extends "PaginaPrincipal.html" %} 
+
+{% load static %} 
+
+{% block title%} Quienes Somos {%endblock%}
+
+
+{% block content%}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<style>
+  .container-fluid img {
+    width: 100%;
+    height: 30%;
+    width: 1092px;
+    height: 550px;
+    margin-top: 30px;
+    margin-left: 135px;
+
+  }
+  hr {
+    border: solid 10px rgb(50, 2, 240);
+    background-color: blue;
+    margin-top: 50px;
+    width: 95%;
+    margin-left: 40px;
+
+  }
+.historia {
+  margin-top: 30px;
+  text-align: center;
+  color: rgb(22, 22, 126);
+}
+  .container {
+    margin-top: 20px;
+  }
+
+  .titulo h1 {
+    text-align: center;
+    justify-content: center;
+  }
+strong{
+  color: black;
+}
+</style>
+
+<body>
+ 
+  <div class="container-fluid">
+    <div class="titulo">
+      <h1> Conoce más de Veranum Hotel </h1>
+    </div>
+    <img src="{% static 'img/portada2.jpg' %}" class="img" alt="5">
+  </div>
+  <div class="container">
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            ¿Que servicio ofrecemos?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+          aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <b>Lea la descricion de nuestro servicios.</b> Es el único hotel de lujo londinense situado junto
+            al Támesis, una ubicación ideal para disfrutar de la amplia oferta de la ciudad. Líder de la escena hotelera
+            en la categoría de lujo durante 130 años, The Savoy ofrece a sus huéspedes una experiencia en constante
+            evolución para satisfacer los deseos del viajero moderno.es el único hotel de lujo londinense situado junto
+            al Támesis, una ubicación ideal para disfrutar de la amplia oferta de la ciudad. Líder de la escena hotelera
+            en la categoría de lujo durante 130 años, The Savoy ofrece a sus huéspedes una experiencia en constante
+            evolución para satisfacer los deseos del viajero moderno.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo">
+            ¿Donde puedo hacer una reserva?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <b>Lea la descricion.</b> Es el único hotel de lujo londinense situado junto al Támesis, una
+            ubicación ideal para disfrutar de la amplia oferta de la ciudad. Líder de la escena hotelera en la categoría
+            de lujo durante 130 años, The Savoy ofrece a sus huéspedes una experiencia en constante evolución para
+            satisfacer los deseos del viajero moderno.es el único hotel de lujo londinense situado junto al Támesis, una
+            ubicación ideal para disfrutar de la amplia oferta de la ciudad. Líder de la escena hotelera en la categoría
+            de lujo durante 130 años, The Savoy ofrece a sus huéspedes una experiencia en constante evolución para
+            satisfacer los deseos del viajero moderno.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree">
+            ¿Existe modo de pago en linea?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <b>Lea la descricion.</b> Es el único hotel de lujo londinense situado junto al Támesis, una
+            ubicación ideal para disfrutar de la amplia oferta de la ciudad. Líder de la escena hotelera en la categoría
+            de lujo durante 130 años, The Savoy ofrece a sus huéspedes una experiencia en constante evolución para
+            satisfacer los deseos del viajero moderno.es el único hotel de lujo londinense situado junto al Támesis, una
+            ubicación ideal para disfrutar de la amplia oferta de la ciudad. Líder de la escena hotelera en la categoría
+            de lujo durante 130 años, The Savoy ofrece a sus huéspedes una experiencia en constante evolución para
+            satisfacer los deseos del viajero moderno.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="historia">
+    <h1>Nuestra Historia</h1>  
+  </div>
+  <div class="clearfix  container-fluid">
+    <img src="{% static 'img/hotel.jpg' %}" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+
+    <p>
+      As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some
+      actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no
+      tangible information at. It simply takes up space and should not really be read.
+      A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a
+      few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+    </p>
+
+    <p>
+      As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some
+      actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no
+      tangible information at. It simply takes up space and should not really be read.
+      As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some
+      actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no
+      tangible information at. It simply takes up space and should not really be read.
+    </p>
+
+    <p>
+      As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some
+      actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no
+      tangible information at. It simply takes up space and should not really be read.
+      As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some
+      actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no
+      tangible information at. It simply takes up space and should not really be read.
+      As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some
+      actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no
+      tangible information at. It simply takes up space and should not really be read.
+      As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some
+      actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no
+      tangible information at. It simply takes up space and should not really be read.
+      As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some
+      actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no
+      tangible information at. It simply takes up space and should not really be read.
+      As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some
+      actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no
+      tangible information at. It simply takes up space and should not really be read.
+      As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some
+      actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no
+      tangible information at. It simply takes up space and should not really be read.
+      And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some
+      hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+    </p>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+
+
+{%endblock%}
